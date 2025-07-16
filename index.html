@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecomart - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1607638726061-76e4fd9bb6a5'); /* Beautiful eco banner */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section-card {
+      background: #f0fff0;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .section-card:hover {
+      transform: scale(1.05);
+    }
+
+    .section-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .section-card h3 {
+      color: #2f855a;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .section-card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .cta-buttons {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .cta-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background-color: #38a169;
+      color: white;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #2f855a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ecomart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="eco-products.html">Eco Products</a>
+      <a href="plastic-items.html">Plastic Items</a>
+      <a href="tips.html">Tips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Ecomart 🌍</h1>
+    <p>Discover eco-friendly alternatives, reduce plastic use, and make the planet a better place — one product at a time.</p>
+  </section>
+
+  <section class="sections">
+    <div class="section-card">
+      <img src="https://img.icons8.com/ios-filled/100/leaf.png" alt="Eco Products" />
+      <h3>Explore Eco Products</h3>
+      <p>From reusable bottles to bamboo brushes — sustainable options curated for you.</p>
+    </div>
+    <div class="section-card">
+      <img src="https://img.icons8.com/ios-filled/100/plastic.png" alt="Plastic Alerts" />
+      <h3>Avoid Plastic Traps</h3>
+      <p>Learn which items harm the planet and what you can use instead.</p>
+    </div>
+    <div class="section-card">
+      <img src="https://img.icons8.com/ios-filled/100/recycle.png" alt="Tips" />
+      <h3>Go Green Tips</h3>
+      <p>Simple lifestyle changes that lead to a more sustainable future.</p>
+    </div>
+    <div class="section-card">
+      <img src="https://img.icons8.com/ios-filled/100/chat.png" alt="Connect" />
+      <h3>Let's Connect</h3>
+      <p>Got a suggestion or idea? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <div class="cta-buttons">
+    <a href="eco-products.html">Shop Eco Products</a>
+    <a href="plastic-items.html">Replace Plastic</a>
+  </div>
+</body>
+</html>

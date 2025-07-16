@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plastic Items to Avoid</title>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 10px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #2f855a;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .products {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2f855a;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .product-card h3 {
+      color: #2f855a;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 0 12px 0;
+    }
+
+    .product-card button {
+      background-color: #2f855a;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product-card button:hover {
+      background-color: #276749;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="eco-products.html">Eco Products</a>
+    <a href="plastic-items.html">Plastic Items</a>
+    <a href="tips.html">Tips</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="products">
+    <h2>Plastic Items to Avoid</h2>
+    <div class="product-grid">
+      <div class="product-card"><h3>Plastic Water Bottle</h3><p>Use Stainless Steel Bottle instead.</p><button onclick="showTip('Stainless Steel Bottle')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Grocery Bag</h3><p>Replace with Cloth Tote Bag.</p><button onclick="showTip('Cloth Tote Bag')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Straw</h3><p>Switch to Metal or Bamboo Straw.</p><button onclick="showTip('Metal or Bamboo Straw')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Cutlery</h3><p>Use Wooden or Metal Cutlery.</p><button onclick="showTip('Wooden or Metal Cutlery')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Food Wrap</h3><p>Beeswax Wrap is a great option.</p><button onclick="showTip('Beeswax Wrap')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Cups</h3><p>Opt for Reusable Cups.</p><button onclick="showTip('Reusable Cups')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Containers</h3><p>Glass or Steel Containers work better.</p><button onclick="showTip('Glass or Steel Containers')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Toothbrush</h3><p>Choose a Bamboo Toothbrush.</p><button onclick="showTip('Bamboo Toothbrush')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Zip Bags</h3><p>Use Silicone Reusable Bags.</p><button onclick="showTip('Silicone Reusable Bags')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Pens</h3><p>Switch to refillable or bamboo pens.</p><button onclick="showTip('Refillable or Bamboo Pens')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Plates</h3><p>Replace with metal or ceramic ones.</p><button onclick="showTip('Metal or Ceramic Plates')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Shampoo Bottles</h3><p>Try shampoo bars instead.</p><button onclick="showTip('Shampoo Bars')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Packaging</h3><p>Look for minimal or paper packaging.</p><button onclick="showTip('Paper Packaging')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Razors</h3><p>Switch to safety razors.</p><button onclick="showTip('Safety Razors')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Brushes</h3><p>Use natural fiber brushes.</p><button onclick="showTip('Natural Fiber Brushes')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Laundry Jugs</h3><p>Choose laundry sheets or refills.</p><button onclick="showTip('Laundry Sheets or Refills')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Lunch Boxes</h3><p>Go for stainless steel tiffins.</p><button onclick="showTip('Stainless Steel Tiffins')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Toys</h3><p>Prefer wooden or cloth toys.</p><button onclick="showTip('Wooden or Cloth Toys')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Lighters</h3><p>Use refillable lighters or matches.</p><button onclick="showTip('Refillable Lighters or Matches')">Add to Cart</button></div>
+      <div class="product-card"><h3>Plastic Storage Drawers</h3><p>Try wooden or bamboo alternatives.</p><button onclick="showTip('Wooden or Bamboo Drawers')">Add to Cart</button></div>
+    </div>
+  </section>
+
+  <div id="ecoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="ecoSuggestion"></p>
+    </div>
+  </div>
+
+  <script>
+    function showTip(ecoAlt) {
+      const modal = document.getElementById("ecoModal");
+      const text = document.getElementById("ecoSuggestion");
+      text.innerHTML = `🌿 Instead, consider using a <strong>${ecoAlt}</strong> for a greener future!`;
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("ecoModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("ecoModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>
